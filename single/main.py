@@ -20,7 +20,7 @@ def main():
     paths = []
     for ip in nodes_ip:
         if ip != config["ip"]:
-            paths.append(traceroute.get_traceroute(ip))
+            paths.append(traceroute.get_traceroute(ip, config["ip"]))
 
     # 使用snmp获取路由节点的其他ip
     snmp_ip_group = []
