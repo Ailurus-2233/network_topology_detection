@@ -52,8 +52,9 @@ class Topo:
             for i in range(len(path) - 1):
                 from_id = ip_map[path[i]]
                 to_id = ip_map[path[i + 1]]
-                self.links.append(set([from_id, to_id]))
-        self.links = list(set(self.links))
+                link = sorted([from_id, to_id])
+                if link not in self.links:
+                    self.links.append(link)
 
     def to_json_str(self):
         ans = ""
@@ -71,3 +72,4 @@ class Topo:
             if i != len(self.links) - 1:
                 ans += ","
         ans += "]}"
+        return ans
