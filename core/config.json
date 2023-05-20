@@ -1,0 +1,8 @@
+{
+    "db_host": "192.168.59.130",
+    "db_port": 3306,
+    "db_user": "root",
+    "db_password": "root",
+    "db_database": "network_topo",
+    "net_iface": "VMware Virtual Ethernet Adapter for VMnet8"
+}

@@ -1,0 +1,6 @@
+{
+    "iface": "eth0",
+    "count": 100,
+    "timeout": 300, 
+    "filter": null
+}

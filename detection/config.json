@@ -1,0 +1,7 @@
+{
+    "core": "127.0.0.1:8000",
+    "count": 100,
+    "timeout": 300, 
+    "iface": "VMware Virtual Ethernet Adapter for VMnet8",
+    "filter": null
+}
